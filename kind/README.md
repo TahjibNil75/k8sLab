@@ -44,7 +44,7 @@ docker --version
 ```
 
 ## 2. Setting Up the KIND Cluster
-Create a kind-cluster-config.yaml file:
+Create a kind-cluster-config.yml file:
 
 ```yaml
 
@@ -63,7 +63,7 @@ Create the cluster using the configuration file:
 
 ```bash
 kind create cluster \
-  --config kind-cluster-config.yaml \
+  --config kind-cluster-config.yml \
   --name my-kind-cluster
 ```
 
@@ -79,7 +79,7 @@ Deploy the Dashboard
 Apply the Kubernetes Dashboard manifest:
 
 ```bash
-kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.7.0/aio/deploy/recommended.yaml
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.7.0/aio/deploy/recommended.yml
 ```
 Create an Admin User
 Create a dashboard-admin-user.yml file with the following content:
